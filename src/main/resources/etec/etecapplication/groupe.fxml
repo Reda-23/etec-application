@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="etec.etecapplication.controller.GroupeController">
+   <children>
+      <AnchorPane prefHeight="455.0" prefWidth="197.0" style="-fx-background-color: D9D9D9;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="108.0" layoutX="46.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/etecLogo_prev_ui.png" />
+               </image>
+            </ImageView>
+            <Line endX="40.83332824707031" endY="7.62939453125E-6" layoutX="96.0" layoutY="97.0" startX="-34.040443420410156" startY="7.62939453125E-6" stroke="#0e4582" strokeWidth="3.0" />
+            <Text fill="#0e4582" layoutX="15.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groupe" textAlignment="CENTER" wrappingWidth="170.13665771484375">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#0e4582" layoutX="46.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.13671875" />
+            <Button fx:id="homeButton" layoutX="15.0" layoutY="402.0" minWidth="47.0" mnemonicParsing="false" onAction="#returnButton" prefHeight="34.0" prefWidth="62.0" style="-fx-background-color: #0e4582;" text="Home" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="197.0" onMouseClicked="#onClick" prefHeight="227.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="84.0" text="ID" />
+          <TableColumn fx:id="nomColumn" prefWidth="198.0" text="Nom Groupe" />
+           <TableColumn fx:id="niveauColumn" prefWidth="220.0" text="Niveaux" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nomText" layoutX="296.0" layoutY="276.0" prefHeight="34.0" prefWidth="191.0" promptText="Nom Groupe" />
+      <TextField fx:id="niveauText" layoutX="296.0" layoutY="323.0" prefHeight="34.0" prefWidth="191.0" promptText="Niveaux" />
+      <Button fx:id="ajouterGroupe" graphicTextGap="5.0" layoutX="540.0" layoutY="301.0" mnemonicParsing="false" onAction="#add" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #078e3e;" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="modifierGroupe" graphicTextGap="5.0" layoutX="296.0" layoutY="388.0" mnemonicParsing="false" onAction="#update" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #078e3e;" text="Modifier" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="supprimerGroupe" graphicTextGap="5.0" layoutX="439.0" layoutY="388.0" mnemonicParsing="false" onAction="#delete" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #de2a23;" text="Supprimer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="241.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom ">
+         <font>
+            <Font name="Verdana Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="221.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveaux">
+         <font>
+            <Font name="Verdana Bold" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

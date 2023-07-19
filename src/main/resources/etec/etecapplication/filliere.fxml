@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="etec.etecapplication.controller.FilliereController">
+   <children>
+      <AnchorPane prefHeight="455.0" prefWidth="197.0" style="-fx-background-color: D9D9D9;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="108.0" layoutX="46.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/etecLogo_prev_ui.png" />
+               </image>
+            </ImageView>
+            <Line endX="40.83332824707031" endY="7.62939453125E-6" layoutX="96.0" layoutY="97.0" startX="-34.040443420410156" startY="7.62939453125E-6" stroke="#0e4582" strokeWidth="3.0" />
+            <Text fill="#0e4582" layoutX="15.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filliére" textAlignment="CENTER" wrappingWidth="170.13665771484375">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#0e4582" layoutX="46.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.13671875" />
+            <Button fx:id="homeButton" layoutX="15.0" layoutY="402.0" minWidth="47.0" mnemonicParsing="false" onAction="#returnButton" prefHeight="34.0" prefWidth="62.0" style="-fx-background-color: #0e4582;" text="Home" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="197.0" onMouseClicked="#onClick" prefHeight="250.0" prefWidth="503.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="97.99998474121094" text="ID" />
+            <TableColumn fx:id="nomColumn" prefWidth="403.99998982747394" text="Nom Filliére" />
+         </columns>
+      </TableView>
+      <TextField fx:id="nomText" layoutX="321.0" layoutY="307.0" prefHeight="34.0" prefWidth="185.0" promptText="Nom filliére" />
+      <Text layoutX="250.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filliére">
+         <font>
+            <Font name="Verdana Bold" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="ajouterFilliere" graphicTextGap="5.0" layoutX="532.0" layoutY="306.0" mnemonicParsing="false" onAction="#add" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #078e3e;" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="modifierFilliere" graphicTextGap="5.0" layoutX="267.0" layoutY="391.0" mnemonicParsing="false" onAction="#update" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #078e3e;" text="Modifier" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="supprimerFilliere" graphicTextGap="5.0" layoutX="424.0" layoutY="391.0" mnemonicParsing="false" onAction="#delete" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #de2a23;" text="Supprimer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

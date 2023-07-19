@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="etec.etecapplication.controller.HomeController">
+   <left>
+      <AnchorPane prefHeight="450.0" prefWidth="190.0" style="-fx-background-color: #b D9D9D9ad9e8;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="125.0" fitWidth="115.0" layoutX="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/etecLogo_prev_ui.png" />
+               </image>
+            </ImageView>
+            <Text fill="#084181" layoutX="39.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion D'emploi Du Temps" textAlignment="CENTER" wrappingWidth="112.75389099121094">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="450.0" prefWidth="465.0" style="-fx-background-color: #084181;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="filliereButton" graphicTextGap="5.0" layoutX="88.0" layoutY="264.0" mnemonicParsing="false" onAction="#setFilliereButton" prefHeight="70.0" prefWidth="180.0" style="-fx-background-color: #85c8b5;" text="Filiére" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="moduleButton" graphicTextGap="5.0" layoutX="297.0" layoutY="63.0" mnemonicParsing="false" onAction="#setModuleButton" prefHeight="70.0" prefWidth="180.0" style="-fx-background-color: #85c8b5;" text="Module" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="salleButton" graphicTextGap="5.0" layoutX="88.0" layoutY="162.0" mnemonicParsing="false" onAction="#setSalleButton" prefHeight="70.0" prefWidth="180.0" style="-fx-background-color: #85c8b5;" text="Salle" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="formateurButton" graphicTextGap="5.0" layoutX="88.0" layoutY="63.0" mnemonicParsing="false" onAction="#setFormateurButton" prefHeight="70.0" prefWidth="180.0" style="-fx-background-color: #85c8b5;" text="Enseignant" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="groupeButton" graphicTextGap="5.0" layoutX="297.0" layoutY="162.0" mnemonicParsing="false" onAction="#setGroupeButton" prefHeight="70.0" prefWidth="180.0" style="-fx-background-color: #85c8b5;" text="Groupe" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="logoutButton" graphicTextGap="5.0" layoutX="523.0" layoutY="447.0" mnemonicParsing="false" onAction="#setLogoutButton" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #de2a23;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="81.0" fitWidth="97.0" layoutX="14.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/edtwhite.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="emploiButton" graphicTextGap="5.0" layoutX="297.0" layoutY="264.0" mnemonicParsing="false" onAction="#setEmploiButton" prefHeight="70.0" prefWidth="180.0" style="-fx-background-color: #078e3e;" text="Emploi Du Temps" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
